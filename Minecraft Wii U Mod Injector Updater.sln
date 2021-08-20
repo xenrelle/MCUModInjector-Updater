@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minecraft Wii U Mod Injector Updater", "Minecraft Wii U Mod Injector Updater.csproj", "{C10AC069-B028-46DF-A49E-5BBC5918202B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C10AC069-B028-46DF-A49E-5BBC5918202B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C10AC069-B028-46DF-A49E-5BBC5918202B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C10AC069-B028-46DF-A49E-5BBC5918202B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C10AC069-B028-46DF-A49E-5BBC5918202B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC14000D-7B89-4097-B6C1-15523F4790B6}
+	EndGlobalSection
+EndGlobal
