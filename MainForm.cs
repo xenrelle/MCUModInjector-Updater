@@ -48,5 +48,10 @@ namespace Minecraft_Wii_U_Mod_Injector_Updater {
             Properties.Settings.Default.AutoStart = autoStart.Checked;
             Properties.Settings.Default.Save();
         }
+
+        private void Launch(object sender, EventArgs e) {
+            Process.Start(targetPath);
+            Environment.Exit(0);
+        }
     }
 }

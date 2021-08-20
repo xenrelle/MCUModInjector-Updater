@@ -90,6 +90,7 @@
             this.startButton.Text = "Launch!";
             this.startButton.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.startButton.UseSelectable = true;
+            this.startButton.Click += new System.EventHandler(this.Launch);
             // 
             // autoStart
             // 
