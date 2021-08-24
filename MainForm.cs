@@ -1,7 +1,8 @@
-﻿using MetroFramework.Forms;
+using MetroFramework.Forms;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.IO;
 using System.Net;
 using System.Windows.Forms;
 
@@ -12,6 +13,7 @@ namespace Minecraft_Wii_U_Mod_Injector_Updater {
         }
 
         public string latestURL = "https://github.com/Kashiiera/Minecraft-Wii-U-Mod-Injector/releases/latest/download/Minecraft.Wii.U.Mod.Injector.exe";
+        public string tempPath = $@"{Application.StartupPath}\Minecraft.Wii.U.Mod.Injector.Temp.exe";
         public string targetPath = $@"{Application.StartupPath}\Minecraft.Wii.U.Mod.Injector.exe";
 
         private void StartDownloading(object sender, EventArgs e) {
@@ -21,7 +23,7 @@ namespace Minecraft_Wii_U_Mod_Injector_Updater {
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             wc.DownloadProgressChanged += DownloadProgress;
             wc.DownloadFileCompleted += Completed;
-            wc.DownloadFileAsync(new Uri(latestURL), targetPath);
+            wc.DownloadFileAsync(new Uri(latestURL), tempPath);
         }
 
         private void DownloadProgress(object sender, DownloadProgressChangedEventArgs e) {
@@ -33,6 +35,8 @@ namespace Minecraft_Wii_U_Mod_Injector_Updater {
             if (e.Cancelled) {
                 Console.WriteLine("Mod Injector download aborted");
             } else {
+                if (File.Exists(targetPath)) File.Delete(targetPath);
+                File.Move(tempPath, targetPath);
                 Console.WriteLine("Mod Injector download complete");
             }
             statusLabel.Text = "Finished!";
