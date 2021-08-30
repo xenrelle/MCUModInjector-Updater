@@ -35,7 +35,7 @@
             // 
             // injectorLogo
             // 
-            this.injectorLogo.Image = global::Minecraft_Wii_U_Mod_Injector_Updater.Properties.Resources.injector_1;
+            this.injectorLogo.Image = global::Minecraft_Wii_U_Mod_Injector_Updater.Properties.Resources.updater;
             this.injectorLogo.Location = new System.Drawing.Point(235, 36);
             this.injectorLogo.Name = "injectorLogo";
             this.injectorLogo.Size = new System.Drawing.Size(179, 143);

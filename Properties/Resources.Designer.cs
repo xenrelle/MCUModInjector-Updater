@@ -63,9 +63,9 @@ namespace Minecraft_Wii_U_Mod_Injector_Updater.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap injector_1 {
+        internal static System.Drawing.Bitmap updater {
             get {
-                object obj = ResourceManager.GetObject("injector-1", resourceCulture);
+                object obj = ResourceManager.GetObject("updater", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
